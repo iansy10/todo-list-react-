@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+.circleCheck:checked ~ .parentLabel {
+  background: #22d3ee;
+}
+.circleCheck:checked ~ .parentLabel span {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
+.circleCheck:checked ~ .parentLabel ~ .contentTodos {
+  text-decoration: line-through;
+}
+.circleCheck ~ .parentLabel ~ .contentTodos:hover .activeButton {
+  display: flex;
+}
